@@ -191,16 +191,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       // Funciones para obtener las imagenes
       getUrlImgCharacter: (id) => {
-        return `https://starwars-visualguide.com/assets/img/characters/${id}.jpg`;
+        return `https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/characters/${id}.jpg`;
       },
       getUrlImgVehicle: (id) => {
-        return `https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg`;
+        return `https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/vehicles/${id}.jpg`;
       },
       getUrlImgPlanet: (id) => {
         if (id === "1") {
           return "https://upload.wikimedia.org/wikipedia/en/6/6d/Tatooine_%28fictional_desert_planet%29.jpg";
         } else {
-          return `https://starwars-visualguide.com/assets/img/planets/${id}.jpg`;
+          return `https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/planets/${id}.jpg`;
         }
       },
     },

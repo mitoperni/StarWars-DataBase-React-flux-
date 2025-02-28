@@ -12,14 +12,22 @@ function Characters() {
   return (
     <>
       <div className="mx-4">
-      <h2 className="star-wars-title">
-      These are the main <strong>characters</strong> from Star Wars:
+        <h2 className="star-wars-title">
+          These are the main <strong>characters</strong> from Star Wars:
         </h2>
       </div>
       <div className="row mx-3 mt-3">
         {store.characters?.map((character) => (
-          <div key={character.uid} className="col-12 col-md-6 col-lg-4 col-xl-3 my-3">
-            <Card name={character.name} uid={character.uid} type="characters" img={`https://starwars-visualguide.com/assets/img/characters/${character.uid}.jpg`} />
+          <div
+            key={character.uid}
+            className="col-12 col-md-6 col-lg-4 col-xl-3 my-3"
+          >
+            <Card
+              name={character.name}
+              uid={character.uid}
+              type="characters"
+              img={`https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/characters/${character.uid}.jpg`}
+            />
           </div>
         ))}
       </div>
